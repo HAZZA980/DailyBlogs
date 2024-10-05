@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harry's Daily Blogs</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sidebar-container {
+            position: fixed;
+            width: 20%;
+            height: 100vh;
+            border: #2ecc71 solid 3px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .sidebar-container .sidebar {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-container .sidebar .home {
+            margin: 1em 0;
+            border: #5bc0de solid 2px;
+            padding: 10px;
+            cursor: pointer;
+            color: #1e3a8a;
+            text-align: center;
+        }
+
+        .sidebar-container .sidebar .month {
+            margin: 1em 0;
+            border: #5bc0de solid 2px;
+            padding: 10px;
+            cursor: pointer;
+            color: #1e3a8a;
+            text-align: center;
+        }
+
+        .sidebar-container .sidebar .month a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .sidebar-container .sidebar .month:hover {
+            background-color: #5bc0de;
+            color: white;
+            font-size: 1rem;
+            transition: 0.3s ease-in-out;
+        }
+
+        main.container {
+            margin-left: 20%; /* To avoid overlap with fixed sidebar */
+            padding: 20px;
+            width: 80%;
+            background-color: #f4f4f4;
+        }
+
+        .blog-post {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        .blog-post h2 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+            color: #2ecc71;
+        }
+
+        .blog-post p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        /* Responsive behavior */
+        @media (max-width: 768px) {
+            .sidebar-container {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .main-container {
+                flex-direction: column;
+            }
+
+            main.container {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <aside class="sidebar-container">
+
+        <ul class="sidebar">
+            <li class="home"><a href="#home">Home</a></li>
+            <li class="month"><a href="#sept">September</a></li>
+            <li class="month"><a href="#oct">October</a></li>
+            <li class="month"><a href="#nov">November</a></li>
+            <li class="month"><a href="#dec">December</a></li>
+            <li class="month"><a href="#jan">January</a></li>
+            <li class="month"><a href="#feb">February</a></li>
+            <li class="month"><a href="#mar">March</a></li>
+            <li class="month"><a href="#apr">April</a></li>
+            <li class="month"><a href="#may">May</a></li>
+            <li class="month"><a href="#june">June</a></li>
+        </ul>
+    </aside>
+
+    <main class="container" id="home">
+        <h1>Harry's Daily Blogs</h1>
+
+        <div class="blog-post" id="oct">
+            <h2>Friday 4rd October</h2>
+            <p>
+                What brings together, transgender people, ex-drug addicts, insomniacs, non-binaries, and schizophrenia
+                patients. That’s right. The Media society. The home to the society outcasts basking in solitude.
+                Everyone as uniquely protuberant as the next. These people have taken the time out of their day, exited
+                their caves, to grace us with their presence to join the new intake of Demon Media. “Write what you
+                know,” was the advice the current editor-in-chief told us. Hardly a niche magazine then but if the
+                possibilities are endless with little moderation or censorship, this magazine is going to be a mix
+                between Orwell’s ‘nineteen eighty-four’ and Freud’s ‘The Psychopathology of Everyday Life’. Out of the
+                three strands of Media, I am focusing on Radio and the Magazine. Enough to learn new skills but not
+                dominate all of my time.
+                <br><br>
+                For the record, that’s Futsal, Running, Karting, Hackers, Demon Media, Racing and Pilates all happening
+                alongside my studies. There are also cultural exchange classes which look appealing which run from
+                November to March which serve as a good additional qualification to complete after my Erasmus year. With
+                all of these extra curriculars, it will be impossible to keep up to date with everything so some will
+                have to be demoted to occasional outings. Competitive futsal is looking less and less likely since I
+                have access to free sessions when I have time anyway at the Watershed. The trial this evening went
+                poorly too so I’ll see if I even make the team. At the end, I was still asked what my number was so
+                there may be hope yet. I think I’m being picked from reputation alone. After gaining the nickname ‘Cold
+                Palmer’ by the players already on the team, it’s evident I showed some skill in previous sessions to
+                gain such a reputable moniker.
+                <br><br>
+                Irrespective of the outcome this evening, Monday evenings are also reserved for Pilates. It’s four days
+                on and I can still feel my abs flaring up when I sit up in the morning. Karting will likely take a back
+                seat too; partly because it’s expensive to participate and very time consuming. I can still take part in
+                the society socials at Soar point to watch the F1 races on the weekend which I’m fervently waiting for.
+                <br><br>
+                PS. The camera lens which I bought off ebay on Wednesday evening arrived five days earlier than
+                expected. First inspections have revealed no conspicuous faults but we’ll see when I go for my first
+                photography session this weekend. Everything seems to be falling into place auspiciously.
+
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Thursday, 3rd October</h2>
+            <p>
+                Bit of a disconcerting atmosphere in the building today. Similar to a heavy pall lingering over a city.
+                It started off as a normal day; all was well. That was until a resident overdosed in the common room. I
+                don’t know the symptoms of an overdose or what one looks like outside of the flicks, but from the
+                detailed descriptions I got from my friends on the ground floor, it sounds similar to a seizure. I’m not
+                sure who was with her at the time or what was taken, but by this evening, the Rashomon effect had truly
+                taken hold, and I was hearing all forms of speculation. Was she suicidal? Was it a cry for help? Was she
+                spiked? Was it an accident? From the tales I’ve heard today, it’s similar to a creative writing
+                assignment I did in Stockholm where we were given the end of a short story and we needed to write the
+                beginning. Each story is different, with complex characters and embellished storylines. The only
+                definitive fact I know is that someone overdosed. Current status unknown. End of.
+                <br><br>
+                Onto a lighter topic. On my perpetual quest for social interaction this year, I had another society
+                gathering this evening: DMU Hackers. The one I’ve been most anticipating. Relevant to Comp. Science by
+                association, though not directly included in my course modules. Dilan was genuinely pleased to see me
+                when I stepped out of the elevator. I think a friendly face was all he needed since he was running the
+                society this year. Given his extensive knowledge in Cyber Security, he is more than qualified. In
+                addition to the culmination of his placement year at IBM, he could pass for a lecturer now. I won’t bore
+                you with the ins and outs of the meeting, but it was great fun, and I regret not participating in
+                previous years. If only I were more confident…
+                <br><br>
+                We concluded the meeting with a visit to Soar Point, the campus sports bar, which I am starting to
+                become a frequent visitor through the different societies. Mehmet, Natalia’s boyfriend, was there with a
+                few of his engineering friends who he introduced me to. Some I already had the pleasure of speaking with
+                at the DMU Racing brief. These are the lads who will hopefully be teaching me how to build an engine. I
+                just need to manage my time effectively so I have enough bandwidth to take part in all these
+                extracurriculars. My current thought process is omitting Futsal from my schedule and only doing a
+                session a week instead of the competitive league for which I have been scouted. The trial is tomorrow
+                evening, so I’ll update you on how that plans out. Though the first Demon Media society meeting starts
+                at six, so I’ll have to think of a crafty excuse to account for my premature exit. See what I mean about
+                my busy schedule…
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Wednesday, 2nd October</h2>
+            <p>
+                I’m a thief. Well, actually, a fraudster would be a more accurate description. Remember those Asics
+                running trainers which were half a size too big? Well, after a five-minute cleanup job and a steady hand
+                attaching the tags again, I have managed to fool the Sports Direct staff into thinking they were unworn.
+                That’s right—a pair of running trainers which I ran 5k in while it rained, plus an active Pilates
+                session straight afterward, and I’ve exchanged them for a pair which is half a size smaller. I almost
+                feel guilty, but my acuity towards subterfuge is to be admired.
+                <br><br>
+                Onto my academic endeavors for the day. After the unchallenging lecture and practical session yesterday,
+                and consultation with Dillan, I have persuaded my course leader to allow me to switch to Mobile App
+                Development. Therefore, I am not repeating the same module which I completed in second year. Also, this
+                means I get to have classes with Dilan, which is always a huge benefit. Why not just stick to Big Data
+                and Machine Learning since you’ve already got the finished coursework, I hear you ask? Well, even though
+                I achieved a first in the module last time out, I actually want to learn a new programming language and
+                get a modicum of experience in the mobile development industry. To be honest, I despised operating the
+                infrastructure which DMU employed to handle Big Data databases, so I didn’t want to put myself through
+                that again. Also, the Kotlin programming language is so intuitive; I practically already know it from
+                learning its derivatives.
+                <br><br>
+                After a long-anticipated wait, Jimmy Carr has finally come to Leicester. We managed to snag tickets for
+                the half-nine showing—me, Natalia, and Natalia’s boyfriend, Mehmet, who happens to be a really nice guy.
+                The show was as expected, with insults, heckles, and banter. Very funny. The audience participation is a
+                must because I felt like snappy one-liners get tiresome after a while. The spontaneity of the audience
+                is what makes it unique. Though there were a lot of jokes which I have seen him perform before on
+                YouTube, etc. When the audience shouts a heckle relating to his tax affairs, he has the same
+                choreographed routine to defend himself. Also, rehearsed clapbacks when asked about Trump, Biden,
+                Starmer, Epstein... I heard him do one joke which I first heard him perform on an episode of <em>Eight
+                    Out
+                    of Ten Cats</em> in 2019. Nevertheless, it was a great evening, and I would recommend everyone go to
+                watch
+                him at least once.
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Tuesday, 1st October</h2>
+            <p>
+                The society group chats have been in full swing today. The Racing Society has been talking about F1 for
+                six hours now—and I love it. There are around seventy members, each with a fervent opinion about the
+                status quo in the driver championship. I occasionally throw in an obviously contentious point of view
+                just to rattle a few people. I know—I’m a prick. I am also part of the Running group chat, which is home
+                dominantly to last night’s joggers complaining about their aches and pains. I’m in the same boat as
+                them, but I’m stoic and don’t publicly announce my weaknesses.
+                <br><br>
+                A dark horse society which I’ve joined is the Doctor Who Society. There are only a handful of us in the
+                group chat, so I don’t know what level of participation I am going to achieve. Call me old-fashioned,
+                but 40% of the members identify as ‘they,’ and they have already given me negative first
+                impressions—either from their kowtowing to other group members to hammer home their pronouns or their
+                Calvinistic approach to running a society. A personal pet peeve of mine, and I know it’s nitpicky:
+                people who don’t use proper grammar or spelling when texting. I don’t mind abbreviations, but
+                individuals who say ‘I fought’ instead of ‘I thought’ are clearly Satanists. That is a speech
+                impediment; therefore, they have no excuse to extend that poor vocabulary into the medium of text.
+                <br><br>
+                Moving away from societies, I had my first timetabled lecture and practical today. Having made my notes
+                yesterday, this introductory session was nothing strenuous. The first Big Data and Machine Learning
+                lecture was no hardship. The most discerning thing I learned is that out of a class of approximately one
+                hundred students, 71% had never used the Python programming language. These are Computer Science
+                students! As I have already done two Big Data modules (one at DMU in second year and one in Stockholm),
+                I should be an expert at machine learning algorithms. I must not get complacent; I must not get
+                complacent; I must not get complacent.
+                <br><br>
+                The biggest hardship I faced this morning, technologically speaking, is trying to get my Linux laptop
+                connected to the DMU WiFi. After thirty minutes debugging myself and a further thirty-five minutes with
+                a crestfallen IT officer in the library, I finally connected. I am the first student he has helped who
+                has faced this problem in thirteen years. Speaking on the phone to the IT staff in Gateway House, he was
+                elucidating the need for updated documentation so these problems don’t reoccur. Also, in that
+                conversation, I was referred to as ‘a gentleman of discernment and taste’ when it comes to operating
+                systems.
+                <br><br>
+                Now I’m off to the DSU to participate in the pièce de résistance of my fresher's journey—the event which
+                I have been preparing for since March: the pool tournament.
+            </p>
+        </div>
+
+
+        <div class="blog-post" id="sept">
+            <h2>Monday, 30th September</h2>
+            <p>
+                The DMU Global trips have been released. During my time here at university, I have made the most of
+                these trips—first going to Bilbao and then spending a year in Stockholm. This year is my final year, so
+                I obviously don’t want anything to clash; however, it looks like the majority of trips are happening
+                during the first week of Easter, which is convenient. There are a few that have caught my eye: Berlin,
+                Salzburg, Dublin. Unfortunately, they are not available to my faculty. There are several trips in the
+                extracurricular category which are applicable to me: employment workshops in Paris and culture in
+                Alicante. I would be happy with attending either. I have been to Spain a lot in the past few years, but
+                I cannot turn down the opportunity to practice my Spanish. Alternatively, I have been looking at going
+                to Paris for a while, and this would give me ample opportunity to see all the sights. All trips are five
+                days long, but the bursary applied to each varies. The opportunities I am eying up will cost me around
+                £200, which is very good since accommodation and flights are included.
+                <br><br>
+                Since the academic year started today, the remaining freshers' activities are taking place almost every
+                evening this week. I am not a drinker nor a clubber, so I don’t have much planned this week. The pool
+                tournament I have been practicing for is taking place tomorrow night, marking the end of my freshers.
+                Most of the societies have their first meetings or activities this week, so my evenings are almost all
+                booked up anyway.
+                <br><br>
+                This evening, for instance, I was running with the group. We were doing laps around a track. Lauren is
+                the pace setter, as she can run a mile in around 6.30 minutes. In total, we covered an accumulated 5k,
+                which is a nice round number. Upon finally running in my new trainers, I have come to the conclusion
+                that they are actually half a size too big for me. If I am duplicitous enough, I will clean them up and
+                try to return them. Though that might be too devious even for a man with my flexible moral compass.
+                <br><br>
+                After running, I had Pilates booked at the Watershed. I hadn’t eaten anything in five hours, my muscles
+                ached, my groin was tight, and my thigh was on the verge of being pulled. I was satisfied with the
+                exercise I had done for the day and was ready to shower and crawl into bed, but Kyra, one of the
+                runners, persuaded me to attend since she didn’t want to go alone. Having completed a couple of yoga
+                sessions, I was expecting much of the same. In truth, there were a lot of similar moves; however,
+                Pilates focused more on core exercises. Instead of completing them until you hit your rep target, the
+                purpose is to control each movement and take your time, many of which activated my abs more than any
+                workout session in the past. Despite my trepidation, it felt like it soothed my aches and pains; though
+                now, I have the added addition of stinging abs along with painful legs when I wake tomorrow.
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Sunday, 29th September</h2>
+            <p>
+                Treachery! I have just found out that ‘Fear Her’ has been removed from BBC iPlayer because that episode
+                contains scenes with the disgraced Hugh Edwards. Doctor Who is well-known for including real newsreaders
+                or presenters to increase the verisimilitude and Britishness of the show. While this contributes to its
+                charm, it also means the show is subject to the ever-shifting landscape of BBC politics, which the
+                corporation must carefully navigate. Since Edwards' declasse status, the Beeb has rightly cut ties with
+                him, but that means that any programs he has appeared in need to be removed from the public domain.
+                Alas, even episodes where he only features for a meagre few seconds. You would think the higher-ups at
+                the Beeb would tactfully dub the scenes or even recut the episodes given the popularity of the show, but
+                no. Hitherto, season two of Doctor Who is missing a much-loved episode…
+                <br><br>
+                Moving onto a less contentious part of my day, after last night’s festivities, I am walking around
+                zombie-like today. Anything less than the required eight hours of sleep gives me headaches.
+                Nevertheless, I trekked to Abbey Park to partake in the final fresher event and to round off a very
+                successful week of acclimatizing to life back in Leicester. ‘Park Life’, as it is advertised, was
+                supposed to be a carnival-type affair with games, activities, crafts, and sports—mediums to help the new
+                intake mix and socialise. Arriving at midday, an hour into these events, I was greeted with a rather
+                lacklustre show of DSU ambassadors and a scarcely filled park. Only a small group of students decided to
+                show up, meaning the overall success of the event was wavering. It’s one of those things which takes
+                mass participation for the event to be successful. Despite the event being ‘sold out’ on the DSU
+                website, the actual turnout was met with general apathy, so I made a premature exit and had my first
+                relaxing day to myself, where I could watch the football and catch up on my reading.
+                <br><br>
+                In other news, Natalia has booked the tickets to see Jimmy Carr after consulting Mehmet. I have been
+                watching this venue for a while, so it’s good to finally have it booked. Alas, now I just need to try
+                and fit it into my busy schedule.
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Saturday, 28th September</h2>
+            <p>
+                This is the first day which I have no DMU activities or sports on. Thankfully, instead of rattling
+                around my room for the day, I do have a few errands to run. After doing the weekly shop at the big
+                Tesco, I also picked up a few extra things for Octavia’s party tonight. It’s the first time meeting up
+                with Emily and Natalia since before leaving for Stockholm so I am euphorically looking forward to it. Of
+                course, Saturday’s are reserved for football and with Nana’s VirginGo installed on my iPad, this makes
+                it significantly easier rather than finding a dodgy stream that doesn’t buffer. Pleased with
+                Middlesbrough’s two nil win over Stoke, I watched another film which had been on my watch list since its
+                release: Miller’s Girl.
+                <br><br>
+                It was a low-budget flick, written by a writer with credits in the MCU and DC world but this was her
+                first stand-alone film which she also directed. Ignoring the low ratings on IMDB, I thought it was
+                enjoyable. Nothing too spectacular, but as a writer, I appreciate the quality vocabulary used in the
+                film. Facilely, the story follows the life of a student (Jenna Ortega) who takes inspiration from her
+                English Professor's book and uses it in her college thesis. The issue is that the Professor’s book
+                contains an erotic scene and the student focuses entirely on that scene - writing fictitiously what
+                could happen between the student and the professor. I actually enjoyed it though it may be because it is
+                based around writing and the narrative using a varied lexicon instead of the mundane vernacular which
+                appeals to the mass market. Martin Freeman and Jenna Ortega are personal favourites of mine too.
+                <br><br>
+                Moving onto the festivities this evening. I wasn’t told that it was Octavia’s birthday on Monday till
+                very late into the evening. Honestly, when they were bringing out the cake, it should have been a
+                giveaway but still I was ignorant of the fact. Natalia has continued working for the lecturer as a
+                research assistant which she was with for the majority of her final year. She did think about doing a
+                PhD but ultimately opted against it. Technically, she is taking a gap year to get more experience doing
+                research as that is what she hopes to be doing in the future. As it is a paltry wage; she is still
+                working at Starbucks on the weekend but as a manager now. Emily and Octavia work in the same care
+                facility, helping children with learning difficulties through the medium of drama. Very noble indeed but
+                it does suit their empathetic need to help people.
+                <br><br>
+                Natalia’s boyfriend was there: Mehmet, who coincidentally, I had already met at the futsal session
+                yesterday. Small world huh. He is doing engineering and is part of the Racing Society which I’ve signed
+                up to. I guess I’ll be seeing a lot of him. Good thing, he’s such a laid back type of person. Emily and
+                Taves’ brothers also turned up; Mikey and Tobey who are good fun to be around. Mikey is 23 and works in
+                a zoo. Toby is slightly more reserved but he is only 18 and starting UOL next week. I was the oldest in
+                the room; a fact which I didn’t think bothered me but as I’ve had pointed out to me this week, this is
+                starting to be a common occurrence. We played a lot of board games and a few party type games like
+                charades. All good fun of course. Living in the building attached to Highcross is very convenient
+                because it is a short walk through the shopping mall to get to their flat, however at two o’clock in the
+                morning, I needed to add another fifteen minutes onto the journey, walking the circumference of the
+                buildings.
+                <br><br>
+                Exhausted, I was in bed and asleep by three o’clock. My springy bed isn’t as big an issue as I initially
+                thought. Accordingly, when you’re tired enough, you’ll sleep anywhere. After the busy week I’ve had,
+                it’s not surprising that I haven’t had time to complain!
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Friday, 27th September</h2>
+            <p>
+                After a busy four days meeting and greeting new people, today can be classed as a quasi day off. There
+                is a ‘fun day’ at the DSU but based on the description of the event online, it sounds uninteresting and
+                just a ploy in order to put another event on the schedule in order to make the purchase of the freshers
+                wristbands seem good value. For the sole purpose of getting me out of the flat, I played football
+                instead. As it was mid-afternoon, it was a much quieter session but the skill level was distinctly
+                higher. This could be considered a training session for the DMU Futsal team because there were so many
+                already distinguished players in the game. Nevertheless, I held my own. Scored a couple, assisted a few
+                more. Try-outs will be interesting.
+                <br><br>
+                Came home to find my room had been broken into. Just kidding. The plumber had let himself in to fix the
+                leaky toilet. The push button had too much pressure on it so he replaced the full body. He shares
+                similar views to me about Leicester. As he’s an Aussie, he only travels into Leicester for work but
+                couldn’t live here. If it wasn’t for his wife, he would be moving back to Australia. He’s the first
+                person I’ve met too who speaks complimentary about the British weather. After he was done, I had the
+                rest of the day to myself. ‘Miss Sloane’ has been on my watchlist forever so I finally had the time to
+                sit down and enjoy it. No football is on tonight so I just relaxed feeling ebullient about my successful
+                freshers week.
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Thursday, 26th September</h2>
+            <p>
+                Since the same societies were occupying the DSU building, I was going to miss the final day of freshers
+                since I have already signed up for half a dozen societies and clubs. However, the gentle persuasion of
+                Hannah changed my mind. I met up with her and her friend Zed and checked out the DSU. Due to the
+                declining interest, a number of societies decided the third day wasn’t worth it so the tables were only
+                occupying two floors, not three. Since almost everyone I’ve met this week is doing English Literature or
+                some other form of Humanities, I have plenty in common with them. Zed is a facsimile of me from first
+                year. Very taciturn and when she does speak, it’s laconic and meticulous. If she could have it her way,
+                she would be getting dragged around freshers by Hannah. Anyway, afterwards we had a brief lunch from one
+                of the stalls. It was very insipid food which is to be expected from makeshift food stalls. I bade
+                farewell as I wanted to play football this afternoon and needed to get back to change.
+                <br><br>
+                All the sessions at the Watershed are still part of the ‘taster experience’ therefore are free and no
+                need to book. This is perhaps a hindrance rather than a benefit when thirty people show up to play in a
+                meagre sized hall. The lads present were the same few who persuaded me to join the trials so they were
+                easy to talk to. Because of the vast interest, more than half the allotted time my team sat on the
+                bench. Nevermind. Some of the current futsal team were there and they were scouting new talent.
+                <br><br>
+                After a quick shower and a brisk walk back to the Watershed, I partook in my second yoga session of the
+                week. In the normal timetable, Yoga will clash with the DMU Hackers meetings on Thursday nights so I’m
+                the epitome of ‘here for a good time, not a long time’ type thing. There was much more interest in this
+                session which is understandable now everyone is finding their feet around campus. Francesca messaged me
+                as the class was finishing saying she was running late. Poor time-management is clearly one of her
+                faults as she missed the entirety of the session. This could be perceived as divine intervention because
+                I was caught in a thunderstorm on the way home. After camping out in the Watershed for ten minutes, it
+                showed no signs of passing. Bravely wrapping up, I ran back to St Martins House but I was rightly soaked
+                through. I do hope I don’t get a cold.
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Wednesday, 25th September</h2>
+            <p>
+                Before attending day two of the freshers fair, I picked up more essentials from town. Instead of doing
+                one big shop, I’ve been doing it in stages. I also had another purpose for visiting town today: running
+                trainers. I had been scouting the shops up north, but they were too dear, as Nana would say. Here, I
+                have dedicated running shops and other independent retailers, which brought me an extended selection.
+                The problem was, the prices skyrocketed in these retailers. Alas, I went to Sports Direct, even though I
+                don’t like to support Mike Ashley. I managed to snag a pair of Asics for £64, which I think is
+                reasonable. As long as I don’t go mad shopping in the next few weeks, I’ll be able to amortize the cost
+                from the largesse of the parents.
+                <br><br>
+                The freshers fair was not as popular today compared to yesterday. The DSU was just as busy with
+                societies, but the interest from the students had subsided. As promised, Dilan was there at the DMU
+                Hackers table. We had a brief but interesting catch-up. He’s still at IBM until the end of the week, so
+                it’s almost guaranteed that he’ll have a job after graduating. The Hackers meetings happen weekly,
+                normally in Gateway House. Currently, that isn’t a problem, but during the second semester, I might have
+                a seminar overlapping. Problem for later.
+                <br><br>
+                The most fortunate meeting of the day was seeing the stall for DMU Runners. This is a society that
+                simply goes running together. Since I’ve just bought new Asics this morning, I thought it was prudent to
+                have a chat with them. Coincidentally, they are meeting at the pub this evening to get to know the new
+                intakes. More on this to come. Being circumspect, I said I’d think about it. That was because I had a
+                previous engagement for this evening: yoga.
+                <br><br>
+                That’s right. I’m turning into a spiritual middle-aged man. I’ll be reading tea leaves and telling
+                fortunes with a crystal ball if I’m not careful. Held at the Watershed, the session had only four others
+                present. Strangely, all women; who’d have thought. The movements were slow and controlled. “It’s all
+                about breathing out the bad energy and inhaling the good energy.” The session was an hour long, and we
+                were doing all the classic poses: downward dog, the chair, deep lunge, the rag doll. Oh yeah, I’ve
+                learnt a lot. We even meditated at the end; however, I admit I did find it difficult not to laugh during
+                the silence at this new-age bollocks. “Focus on your breathing. Breathe in hopes and dreams. Breathe out
+                negativity and impure thoughts.” What? Is this a front for a religious society now too?
+                <br><br>
+                I met Hannah and Francesca at this class. They’re starting their first year, both studying English
+                Literature. Obviously, we had a lot of similar interests and have read almost identical books. Plenty of
+                Dickens and Austen, F. Scott Fitzgerald, H.G. Wells, even Shakespeare. Who knows, there may even be hope
+                yet of reciting Shakespeare monologues to each other.
+                <br><br>
+                After a quick shower and a bite to eat, I headed back into town to meet the runners at Soar Point. This
+                is the go-to place for society socials because of the generous deals offered to students and also the
+                large TV screens showing football. The Karting society has an arrangement with the staff to watch the F1
+                there on Sundays too, as long as it doesn’t clash with the football. No doubt, I’ll be a regular if all
+                goes well.
+                <br><br>
+                The Running Society is good fun. There is a good mix of people, boys and girls. Very affable. We played
+                cards and Uno, spoke about our subjects, and shared our hobbies other than running. I was at the head of
+                the table with the committee members: Katie and Lauren, who were the undersecretaries. Tobias, who had
+                graduated last year, is a very funny man and also a paramedic, so he’s a handy friend to have. I was in
+                the Soar till around eleven before we headed out to Firebug, another pub whose USP was offering a retro
+                gaming experience whilst people drink. Mario Karts, Black Ops zombies, MW3. I felt a wave of nostalgia
+                just seeing the consoles. It was just myself and the committee members who ventured to Firebug, as the
+                rest took the long voyage to Black Cats, which was part of the Freshers experience. As a non-drinker, I
+                haven’t invested the £40 in a wristband to get me access to these clubs, but I was content to stay with
+                the runners. I heard the Running Society is well-run. Well run—see what I did there? They have a group
+                running almost every night of the week, so we can pick and choose our days and distances. They also do
+                social runs where they dress up, which will be … eventful.
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Tuesday, 24th September</h2>
+            <p>
+                Mark the date. My first attempt at being sociable. The DSU building was packed from the ground floor to
+                the top with societies and sports teams, all trying to persuade you to join. No wonder I opted to avoid
+                this in past years. This would have been an introvert's worst nightmare, having everyone asking
+                questions and engaging in conversation. Now, however, I welcomed the challenge. After queuing for the
+                best part of an hour to even get in, it was actually enjoyable because I had previously looked online at
+                potential simpatico societies. The stalls I was actively looking for included: DMU Hackers (a computer
+                science society), Karters (a go-karting club that holds socials where they watch F1 together), and Demon
+                Media (the De Montfort magazine and radio proprietors). I thought this triumvirate would be a good place
+                to start.
+                <br><br>
+                Having scoured from top to bottom, I found the latter two but no sign of DMU Hackers. Serendipitously, I
+                ran into Dilan on my way home, who happens to be on the committee. The reason for their absence was due
+                to a lack of space in the building, but they would be there tomorrow.
+                <br><br>
+                The Karters were a passionate bunch, and they all shared simpatico views on F1 as I did. This looks
+                promising. I am less enthusiastic about Demon Media because the quality of the magazine looks mediocre.
+                In conjunction with the poor design and large blank spaces permeating each page, the writing was subpar.
+                I probably sound like Liam when I say that I could do a much more comprehensive job if I were to take
+                over. Similarly to the futsal, I’m not looking for a heavy workload, just a medium in which I can
+                publish a few articles now and again. The first meetings are happening next week, so I will definitely
+                give them a go at least. On my way out, the Futsal society cornered me, and they didn’t let me bypass
+                them without signing up for the trials happening in the next few weeks. It’s nice to be wanted.
+                <br><br>
+                Back at St Martins House, a FIFA tournament was meant to be held, but the staff couldn’t work the TV, so
+                that has been postponed till next week. Nevertheless, I held residence in the common room with a few
+                others, enjoying the conviviality. There were Nigerians, Londoners, Brummies, and me—purposely confusing
+                them all with my northern vernacular. “I canny see the point in gandering about for no reason like” was
+                a personal favourite malapropism of mine. The look of bewilderment on their faces was amusing in itself.
+                Anyway, I have gained a few more followers on Insta, so we can keep in touch. Overall, they seem like
+                good people.
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Monday, 23rd September</h2>
+            <p>
+                The first week of moving into new accommodation is always the most expensive. Stocking up on the
+                essentials plus the weekly shop too, normally brings me to around £50 for the week. I was exhausted for
+                some reason yesterday so I’ve been putting off the shopping and living on bread and the frozen foods
+                which the local Tesco Express stocks. I was carrying out the menial tasks today such as updating my
+                student card and re-registering for the forthcoming year so I was active anyway. The Diamond Jubilee
+                Leisure centre is on the way to the big Tesco’s so I enquired about the free classes available to me.
+                Unbeknownst to me, it was completely the wrong place, leaving the receptionist perplexed about my
+                questions. Turns out, it’s actually the Watershed where the DMU Active session takes place - a DMU owned
+                complex which has dedicated staff which also houses many of the sports societies too.
+                <br><br>
+                Following my productive conversation with the staff, I received a sheet with all the taster sessions on
+                which would be happening throughout freshers. As futsal is the most popular, they are holding four
+                sessions this week so everyone has a chance. No need to sign up or register. Just turn up and play.
+                Simple. The futsal session was eventful. I wanted something relaxed, (if there is such a thing in
+                football), to keep me active throughout the year. Evidently there must have been a few members of the
+                DMU futsal squad there scouting because I’ve been ushered to go to the try-outs. I didn’t particularly
+                think my performance was as good as it normally is but the enthusiasm which the players had when
+                speaking about my skill was too ingratiating for me to say no. I guess I’ll be playing competitive
+                futsal this year…
+                <br><br>
+                My third flatmate moved in today too - Esther. She’s studying microbiology at UOL so I’m not sure how
+                much I’ll see of her. She seems congenial like Summer but I still don’t know how close we are all going
+                to be.
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Saturday, 21st September</h2>
+            <p>
+                Today, the first day of my journey through my final year at university. After bidding adieu to the
+                parents from my new apartment building, I was able to explore. Being located almost centrally to
+                everywhere I go is ideal but the longer journey to the Tesco Superstore may become irksome after a
+                while. But for now, I am satisfied with my room; the bed is springy but it’s one of those things I’ll
+                have to live with. Also from having brief chats with the staff at the reception, this location is
+                normally quiet due to the reduced number of rooms compared to their sister buildings. My only roommate
+                at the moment seems cordial which is all I can ask for at this point. I just hope this ‘university
+                experience’ which I so craved does not come to bite me on the arse because down the road when I have a
+                full apartment.
+            </p>
+        </div>
+
+    </main>
+</div>
+
+</body>
+</html>
