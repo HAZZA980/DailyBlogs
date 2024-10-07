@@ -1,2 +1,2 @@
 # DailyBlogs
-Static Websites publishing my Daily Blogs
+Nothing Special. Just a static website publishing my Daily Blogs
