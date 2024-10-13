@@ -12,82 +12,85 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Lato', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
         .main-container {
             display: flex;
-            flex-direction: row;
         }
 
         .sidebar-container {
             position: fixed;
-            width: 20%;
+            width: 250px;
             height: 100vh;
-            border: #2ecc71 solid 3px;
-            padding: 10px;
-            background-color: #f9f9f9;
+            padding: 20px;
+            background-color: #1e3a8a;
+            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
         }
 
-        .sidebar-container .sidebar {
+        .sidebar {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
-        .sidebar-container .sidebar .home {
-            margin: 1em 0;
-            border: #5bc0de solid 2px;
-            padding: 10px;
-            cursor: pointer;
-            color: #1e3a8a;
-            text-align: center;
+        .sidebar li {
+            margin-bottom: 15px;
         }
 
-        .sidebar-container .sidebar .month {
-            margin: 1em 0;
-            border: #5bc0de solid 2px;
-            padding: 10px;
-            cursor: pointer;
-            color: #1e3a8a;
-            text-align: center;
-        }
-
-        .sidebar-container .sidebar .month a {
+        .sidebar a {
             text-decoration: none;
-            color: inherit;
+            color: #f4f4f4;
+            padding: 10px;
             display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        .sidebar-container .sidebar .month:hover {
-            background-color: #5bc0de;
-            color: white;
-            font-size: 1rem;
-            transition: 0.3s ease-in-out;
+        .sidebar a:hover {
+            background-color: #4a67cc;
         }
 
         main.container {
-            margin-left: 20%; /* To avoid overlap with fixed sidebar */
-            padding: 20px;
-            width: 80%;
-            background-color: #f4f4f4;
+            margin-left: 250px; /* Matches the width of the sidebar */
+            padding: 40px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            width: calc(100% - 250px);
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #1e3a8a;
         }
 
         .blog-post {
-            border: 1px solid #ccc;
-            padding: 15px;
-            margin-bottom: 20px;
-            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #ffffff;
         }
 
         .blog-post h2 {
-            font-size: 1.5em;
-            margin-bottom: 0.5em;
-            color: #2ecc71;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #e67e22;
         }
 
         .blog-post p {
-            font-size: 1em;
-            line-height: 1.6;
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #555;
+            margin: 0;
+        }
+
+        .blog-post p + p {
+            margin-top: 15px;
         }
 
         /* Responsive behavior */
@@ -96,6 +99,7 @@
                 width: 100%;
                 height: auto;
                 position: relative;
+                box-shadow: none;
             }
 
             .main-container {
@@ -105,6 +109,7 @@
             main.container {
                 margin-left: 0;
                 width: 100%;
+                padding: 20px;
             }
         }
     </style>
@@ -133,163 +138,274 @@
         <h1>Harry's Daily Blogs</h1>
 
         <div class="blog-post" id="oct">
-            <h2>Thursday 10th October</h2>
+            <h2>Saturday 12th October</h2>
             <p>
-                After my indulgent spending spree on Tuesday night (yes, that blog was an allegory about my reckless shopping),
-                today brought the stark realisation that my dilemma lies in want, not need. While some purchases were 
-                necessities,the more extravagant ones—the McLaren F1 hoodie, the Levi's jeans—were better returned. My frugal
-                instincts, once again, saved me from myself. Yet, there’s nothing more déclassé than walking back into the
-                stores where, just days earlier, I had proudly parted with a large chunk of my net worth, only to ask for 
-                refunds. I could feel the judgement in the cashier's eyes.
+                Ironically, my best night’s sleep since moving back to University has been in Liam’s bed. I think that
+                is the message I’ve been waiting for to invest in further padding for my springboard for a mattress I’ve
+                got currently.
                 <br><br>
-                One particularly irksome trend emerged: the disappearance of the physical card swipe in the refund process.
-                At each store, they processed the refund remotely, without me even tapping my card. Unacceptable! I want
-                visual confirmation! Either the reassuring beep or in a perfect world, dollar signs floating through the air!
-                The clear signs that my money is being returned. Instead, I’m met with the assurances of the cashier who has 
-                no obligation to spare me from their mendacity. “Your refund will be back in your account in three to five 
-                days.” Will it? I suppose I have no choice but to trust you then. 
+                My plan was to head swiftly to the British Museum this morning since I like to update myself on the
+                exhibitions at least once a year. Since my Erasmus year in Stockholm, it’s been almost two since I last
+                visited. After a late one last night, time was against me. My train was departing at half two so instead
+                of rushing round the museum, I opted for a photoshoot of Marble Arch instead. Again putting my
+                photography skills to the test until it was time to go.
                 <br><br>
-                Putting this behind me, it was time for a change of scenery. Goodbye Leicester. Hello the bright lights of
-                London. First on the agenda: SIX! The Musical. Immediately, time was against me as I rushed to the Vaudeville
-                Theatre as the train was inevitably delayed. The musical was about the six ex-wives of Henry VIII and offered
-                a refreshing format when compared to other musicals. Instead of telling a story, reliving their lives, it was
-                similar to a concert with each character trying to persuade the audience that they were the most memorable wife.
-                Complete with audience interaction and individual solos, I would recommend it to everyone. I thought the short
-                runtime would hinder it but instead it enriches everything, giving it a brisk pace that keeps everyone engaged 
-                and entertained from start to finish. Each performance is a burst of energy, drawing you in with catchy tunes 
-                and clever lyrics. Similar to Hamilton, its purpose is to teach children about history whilst incorporating 
-                modern references; joking about the patriarchy and commenting on the male hegemony of today. It is critically 
-                well received for these reasons as well as passing the Bechdel test which most musicals tend to fail.*
-                <br><br>
-                After a brief photography session with my new zoom lens, capturing the London skyline between the Vaudeville
-                Theatre and the Globe Theatre, I transitioned from reliving the embellished history of Henry VIII in the early
-                sixteen hundreds to exploring the world of Shakespeare in the late sixteen hundreds. Liam was just as ebullient
-                to be spending a night watching Shakespeare, which he showed by heading straight to the bar to indulge in red 
-                wine before we took our seats. The Comedy of Errors, a classic tale of mistaken identity, intrigue, and the 
-                complexities of love… the paragon of Shakespearean Literature. 
-                <br><br>
-                It’s about two sets of identical twins who are separated at birth and accidentally reunited through a series
-                of fortunate circumstances. The ensuing chaos leads to comedic situations, wrongful accusations, and of course,
-                a joyful reunion. This certainly wasn’t a tragedy. 
-                <br><br>
-                The Globe wasn’t sold out but still boasted a good turnout for a cold October evening. When I go again in the 
-                future, I will be sure to put extra layers on. Tonight, Liam graciously supplied me with a woolly jumper as I
-                was expecting the same warm temperatures I was enjoying in Leicester but ended up freezing instead. Two hours 
-                of laughs, shenanigans and tomfoolery, the players took their final bow and it was time to go. Time to have a
-                rough night’s sleep on Liam’s floor.
-                <br><br>
-                *The Bechdel Test is a simple measure of female representation in fiction, requiring that a work features at
-                least two named women who talk to each other about something other than a man.
+                It’s been another successful outing to London: two shows, a Globe Theatre tour, an F1 exhibition, a
+                plethora of photos and a long-overdue catchup with Matthew. Until we meet again, London, may the
+                distance be brief and my return quick upon the wind.
             </p>
         </div>
-        
+
+        <div class="blog-post">
+            <h2>Friday 11th October</h2>
+            <p>
+                After a free trip on the DLR—thanks to my confusion about where to scan my card—I arrived at the ExCeL
+                Centre in East London for the Formula One exhibition. Usually, when visiting London, I stay within a
+                central area—roughly bounded by St Pancras, Mile End, the Globe Theatre, and Hyde Park. This time,
+                though, I ventured further, and East London didn’t disappoint. The area is beautiful, with stunning
+                views, especially from the Royal Victoria Dock footbridge, which offers a spectacular vantage point of
+                the Canary Wharf skyline.
+                <br><br>
+                The F1 exhibition was well-curated, guiding visitors through a maze of attractions with provided
+                headphones. It delved into the sport's rich history, highlighting Bernie Ecclestone's pivotal role in
+                making it an international phenomenon, as well as celebrating the successes of legendary drivers like
+                Ayrton Senna, Nigel Mansell, Niki Lauda, Michael Schumacher, and Lewis Hamilton. The exhibition also
+                covered important safety advancements, including the introduction of crash barriers and the halo. Among
+                the F1 cars on display were the RB16—not Verstappen’s record-breaking RB19 from last season—and the 2020
+                Mercedes. One particularly striking exhibit was the charred remains of Romain Grosjean’s car from his
+                harrowing 2020 crash; it's a sobering sight, but a powerful reminder of how fortunate he was to survive.
+                <br><br>
+                Around the venue, screens featured interviews with key figures discussing car design, engineering, and
+                famous rivalries between drivers and teams. For £30, the experience felt like good value, offering
+                plenty of insight into the world of Formula One.
+                <br><br>
+                Of course, the exhibition ended with a gift shop. I hoped to find a Mercedes Team hoodie—its colours
+                more subtle than the bold orange McLaren one I had returned yesterday—but the prices were eye-watering.
+                £15 for a keyring, £45 for caps, and a staggering £130 for hoodies. I wasn’t the only one taken aback;
+                murmurs of incredulity echoed among the other visitors.
+                <br><br>
+                Resisting any impulse purchases, I left quickly and made my way to the Globe Theatre for a guided tour.
+                London's transport system is truly one of its best features—being able to travel ten miles from East
+                London to London Bridge for a reasonable fare is a major advantage. It’s just a shame that the railways
+                don’t share this kind of accessible pricing.
+                <br><br>
+                Arriving a little earlier than expected, I was able to take a peek inside Tate Modern. I wish I could
+                say that this was a refreshing change from my go to art venue of the National Gallery, but the
+                abstractionism on display bordered on frivolous and arid. Tate Modern focuses on modern art from the
+                past century. This makes it ambiguous to define given it’s hard to discern what this epoch will be
+                remembered for in a few hundred years time. The Neoclassicism of the 1700s is as unique and separate
+                from the Romanticism and Realism of the 1800s. I only hope that the large canvas of painted stripes does
+                not go down as century defining work.
+                <br><br>
+                It got me thinking what is the purpose of Art. Should it be conformist, contentious, byzantine? The
+                exhibition I saw was about celebrating the monotony of everyday life. That’s why it included many photos
+                of household items, populated streets, and shop windows. This would be a captivating collection had it
+                been in any other location but London.
+                <br><br>
+                It raises the question: does art exist to highlight what we overlook, or is it meant to transcend the
+                ordinary? An exhibition like this could be fascinating in a more remote, serene setting, where the
+                everyday life on display might contrast sharply with the viewer’s experience of the surroundings. But in
+                London, it risks becoming part of the noise, a reflection of what’s already outside the gallery walls.
+                <br><br>
+                In that sense, art’s purpose becomes layered: it can be conformist, capturing and celebrating life as it
+                is, contentious, challenging our assumptions and provoking thought, or byzantine, complex and difficult
+                to unravel. But perhaps, like this exhibition, it can also be a mirror, inviting us to see the
+                overlooked beauty or dullness in our own routines—turning the ordinary into something worth
+                contemplating.
+                <br><br>
+                Damn it. I wasn’t that impressed with the art but the fact that it has garnered this level of analysis,
+                answers my question of the purpose of the art on display.
+                <br><br>
+                Onto more impressive sights. The Globe Theatre tour was as magical as expected. The afternoon matinee
+                performance of The Comedy of Errors had just concluded which meant the team were dismantling the set to
+                prepare for the evening show of Hansel & Gretel. The guide was an all access pass to the Globe, teaching
+                us about the history and the architecture which makes the plays come to life. This is the third Globe
+                Theatre; only opening in 1997. The project was spearheaded by Sam Wanamaker who was an actor and
+                director, but mainly a Shakespeare aficionado. Wanamaker accumulated the funds from wealthy supporters
+                and benefactors and immortalised their largesse by engraving their names in the concrete slabs outside
+                the Theatre. Some notable names include Lawrence Olivier, Alfred Hitchcock, Maggie Smith, Dame Judi
+                Dench, and Kenneth Branagh. Wanamaker was quite ingenuitive. He went down the phone book and called
+                everyone with the surname of Shakespeare asking for donations. Unsurprisingly, most supported the cause
+                as it meant they could be a part of history.
+                <br><br>
+                Taking a break from my cultural activities, it was time for pool and a catchup with Matthew. The
+                mechanics which I learnt from snooker served me well. This is how I expected the Pool Tournament to go
+                during freshers but was instead greeted with bent cues and unsportsmanlike behaviour from my opponent.
+                After a bite to eat, Matthew gave me a tour around the Barbican and then we hit the pubs. I say this
+                everytime I visit London but the people who live there don’t realise how lucky they are to have
+                everything right on their doorstep. Culture, musicals, plays, tourist attractions, architecture,
+                palaces, parks, skyscrapers, castles, and Shakespeare. It’s probably best that I don’t live there yet,
+                otherwise I would bankrupt myself by seeing every play under the sun.
+
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Thursday 10th October</h2>
+            <p>
+                After my indulgent spending spree on Tuesday night (yes, that blog was an allegory about my reckless
+                shopping), today brought the stark realisation that my dilemma lies in want, not need. While some
+                purchases were necessities, the more extravagant ones—the McLaren F1 hoodie, the Levi's jeans—were
+                better returned. My frugal instincts, once again, saved me from myself. Yet, there’s nothing more
+                déclassé than walking back into the stores where, just days earlier, I had proudly parted with a large
+                chunk of my net worth, only to ask for refunds. I could feel the judgement in the cashier's eyes.
+                <br><br>
+                One particularly irksome trend emerged: the disappearance of the physical card swipe in the refund
+                process. At each store, they processed the refund remotely, without me even tapping my card.
+                Unacceptable! I want visual confirmation! Either the reassuring beep or preferably dollar signs floating
+                through the air! The clear sign that my money is being returned. Instead, I’m met with the assurances of
+                the cashier who has no obligation to spare me from their mendacity. “Your refund will be back in your
+                account in three to five days.” Will it? I suppose I have no choice but to trust you then.
+                <br><br>
+                Putting this behind me, it was time for a change of scenery. Goodbye Leicester. Hello the bright lights
+                of London. First on the agenda: SIX! The Musical. Immediately, time was against me as I rushed to the
+                Vaudeville Theatre as the train was inevitably delayed. The musical was about the six ex-wives of Henry
+                VIII and offered a refreshing format when compared to other musicals. Instead of telling a story,
+                reliving their lives, it was similar to a concert with each character trying to persuade the audience
+                that they were the most memorable wife. Complete with audience interaction and individual solos, I would
+                recommend it to everyone. I thought the short runtime would hinder it but instead it enriches
+                everything, giving it a brisk pace that keeps everyone engaged and entertained from start to finish.
+                Each performance is a burst of energy, drawing you in with catchy tunes and clever lyrics. Similar to
+                Hamilton, its purpose is to teach children about history whilst incorporating modern references; joking
+                about the patriarchy and commenting on the male hegemony of today. It is critically well received for
+                these reasons as well as passing the Bechdel test which most musicals tend to fail.*
+                <br><br>
+                After a brief photography session with my new zoom lens, capturing the London skyline between the
+                Vaudeville Theatre and the Globe Theatre, I transitioned from reliving the embellished history of Henry
+                VIII in the early sixteenth century to exploring the world of Shakespeare in the late sixteenth century.
+                Liam was just as ebullient to be spending a night watching Shakespeare, which he showed by heading
+                straight to the bar to indulge in red wine before we took our seats. The Comedy of Errors, a classic
+                tale of mistaken identity, intrigue, and the complexities of love… the paragon of Shakespearean
+                Literature. It’s about two sets of identical twins who are separated at birth and accidentally reunited
+                through a series of fortunate circumstances. The ensuing chaos leads to comedic situations, wrongful
+                accusations, and of course, a joyful reunion. This certainly wasn’t a tragedy.
+                <br><br>
+                The Globe wasn’t sold out but still boasted a good turnout for a cold October evening. When I go again
+                in the future, I will be sure to put extra layers on. Tonight, Liam graciously supplied me with a woolly
+                jumper as I was expecting the same warm temperatures I was enjoying in Leicester but ended up freezing
+                instead. Two hours of laughs, shenanigans and tomfoolery, the players took their final bow and it was
+                time to go. Time to have a rough night’s sleep on Liam’s floor.
+                <br><br>
+                *The Bechdel Test is a simple measure of female representation in fiction, requiring that a work
+                features at least two named women who talk to each other about something other than a man.
+
+            </p>
+        </div>
+
         <div class="blog-post">
             <h2>Wednesday 9th October</h2>
             <p>
-                Soar Point was buzzing as ever. The raucous thrills of students from all faculties, enjoying the camaraderie 
-                of their respective societies. The Women's Champions League games, which garnered a larger crowd than I would
-                have expected in a student bar, were displayed on every screen. Each table was lined with benches and discounted 
-                menus to accommodate the extra influx of customers. Personally, I don’t know much about Women’s football. The 
-                runners who I was with, shared a passing interest but their enthusiasm wavered once the conversation moved off 
-                Lionesses Euro Campaign. While it was a successful night for Manchester City who won against Barcelona, Arsenal
-                didn’t share the same glory, being huminited 5-2. When the fourth goal went in, that’s when the uproar started. 
-                A group of supporters couldn’t contain their disappointment and as one would expect from a footballing crowd, 
-                unleashed a diatribe of abuse at the screens. It was no different from what can be heard at a men’s game but
-                because it was Women’s football and the pub was filled with students, many disapproved of the misogynistic 
-                epithets. Still, I didn’t think it was anything egregious so continued my conversation with the runners. Five
-                minutes later, the fans were being escorted out of the pub; followed by the owner’s statement, apologising for
-                an offence which people might have suffered. I was in disbelief. I guess that’s the level we’re at here. I best
-                not bring out my best Bernard Manning impressions or Jimmy Carr jokes. Soft tarts.
+                Soar Point was buzzing as ever. The raucous thrills of students from all faculties, enjoying the
+                camaraderie of their respective societies. The Women's Champions League games, which garnered a larger
+                crowd than I would have expected in a student bar, were displayed on every screen. Each table was lined
+                with benches and discounted menus to accommodate the extra influx of customers. Personally, I don’t know
+                much about Women’s football. The runners who I was with, shared a passing interest but their enthusiasm
+                wavered once the conversation moved off Lionesses Euro Campaign. While it was a successful night for
+                Manchester City who won against Barcelona, Arsenal didn’t share the same glory, being huminited 5-2.
+                When the fourth goal went in, that’s when the uproar started. A group of supporters couldn’t contain
+                their disappointment and as one would expect from a footballing crowd, unleashed a diatribe of abuse at
+                the screens. It was no different from what can be heard at a men’s game but because it was Women’s
+                football and the pub was filled with students, many disapproved of the misogynistic epithets. Still, I
+                didn’t think it was anything egregious so continued my conversation with the runners. Five minutes
+                later, the fans were being escorted out of the pub; followed by the owner’s statement, apologising for
+                an offence which people might have suffered. I was in disbelief. I guess that’s the level we’re at here.
+                I best not bring out my best Bernard Manning impressions or Jimmy Carr jokes. Soft tarts.
             </p>
         </div>
-        
+
         <div class="blog-post">
             <h2>Tuesday 8th October</h2>
             <p>
-                Let me tell you a story. It’s about a man; tall, debonair, a true gentleman with a penchant for fine things.
-                He carried himself with the grace of nobility, believing firmly that a man’s mood and fortune were shaped,
-                in no small part, by how he presented himself to the world. His garments, he believed, were a reflection of 
-                his spirit, and so he took great care to adorn himself in the finest cloth that gold could buy.
+                Let me tell you a story. It’s about a man; tall, debonair, a true gentleman with a penchant for fine
+                things. He carried himself with the grace of nobility, believing firmly that a man’s mood and fortune
+                were shaped, in no small part, by how he presented himself to the world. His garments, he believed, were
+                a reflection of his spirit, and so he took great care to adorn himself in the finest cloth that gold
+                could buy.
                 <br><br>
-                This man, though refined and prudent in most affairs, was not immune to the whims of vanity, and the allure
-                of luxury tugged often at his heart. One evening, word reached him of a rare event—a grand market, closed
-                to the commoners, where only those of youthful vigour and standing might enter. It was whispered that the
-                best merchants of the realm would offer their goods at prices so low, they defied reason. A nobleman's
-                wardrobe for a tradesman’s coin. 
+                This man, though refined and prudent in most affairs, was not immune to the whims of vanity, and the
+                allure of luxury tugged often at his heart. One evening, word reached him of a rare event—a grand
+                market, closed to the commoners, where only those of youthful vigour and standing might enter. It was
+                whispered that the best merchants of the realm would offer their goods at prices so low, they defied
+                reason. A nobleman's wardrobe for a tradesman’s coin.
                 <br><br>
                 To make the market more tempting for these young souls, the guilds set forth amusements to capture their
-                fancies. There was music, lively as a royal ball, played by minstrels who stood high on a dais in the midst
-                of the square. Brightly coloured pennants flapped in the evening air, strewn across the market stalls like 
-                the banners of a noble tournament. It was like a merry festival, yet strange, for no guiding hand of elder
-                or master was there to rein in the wild spirit of youth. For but two hours, these apprentices had free reign
-                to barter, trade, and snatch up the finest wares at unheard-of discounts, as if time itself had been turned 
-                to favour them.
+                fancies. There was music, lively as a royal ball, played by minstrels who stood high on a dais in the
+                midst of the square. Brightly coloured pennants flapped in the evening air, strewn across the market
+                stalls like the banners of a noble tournament. It was like a merry festival, yet strange, for no guiding
+                hand of elder or master was there to rein in the wild spirit of youth. For but two hours, these
+                apprentices had free reign to barter, trade, and snatch up the finest wares at unheard-of discounts, as
+                if time itself had been turned to favour them.
                 <br><br>
-                Into this revelry strode our protagonist; a man no different from his peers, eyes wide at the splendour and 
-                goods displayed before him. He had no thought of thrift or restraint, for such a night comes but seldom, and 
-                never again might such bargains be offered. So, as though possessed by a strange frenzy, he dashed from one 
-                stall to the next, his purse jingling with the coin he had saved.
+                Into this revelry strode our protagonist; a man no different from his peers, eyes wide at the splendour
+                and goods displayed before him. He had no thought of thrift or restraint, for such a night comes but
+                seldom, and never again might such bargains be offered. So, as though possessed by a strange frenzy, he
+                dashed from one stall to the next, his purse jingling with the coin he had saved.
                 <br><br>
-                He purchased fine woollen breeches, velvet doublets fit for a nobleman, a grand leather jerkin, and even a 
-                hooded cloak emblazoned with the crest of a famous knightly order. Each piece he bought with little thought,
-                for the prices, they said, were far lower than any would find on a common market day. And so, laden with goods,
-                he strode back to his quarters, a triumphant smile upon his face.
+                He purchased fine woollen breeches, velvet doublets fit for a nobleman, a grand leather jerkin, and even
+                a hooded cloak emblazoned with the crest of a famous knightly order. Each piece he bought with little
+                thought, for the prices, they said, were far lower than any would find on a common market day. And so,
+                laden with goods, he strode back to his quarters, a triumphant smile upon his face.
                 <br><br>
-                Yet, as the moon rose higher in the sky, and the frenzy of the fair faded, the young man sat amidst his newly 
-                acquired riches and began to reckon his coin. He gazed in his reflection; in awe at his sartorial elegance for
-                it was then that a troubling thought took root. He had spent far more than he had ever intended. What use had 
-                he for so many fine garments? Could he truly afford to keep all that he had purchased? And indeed, did he even 
-                need such luxuries, when simpler wares might serve him just as well?
+                Yet, as the moon rose higher in the sky, and the frenzy of the fair faded, the young man sat amidst his
+                newly acquired riches and began to reckon his coin. He gazed in his reflection; in awe at his sartorial
+                elegance for it was then that a troubling thought took root. He had spent far more than he had ever
+                intended. What use had he for so many fine garments? Could he truly afford to keep all that he had
+                purchased? And indeed, did he even need such luxuries, when simpler wares might serve him just as well?
                 <br><br>
-                And thus, my friends, this tale stands as a caution to all. For even the sharpest mind can be dulled by the 
-                glitter of a fleeting bargain, and in the rush to seize every treasure, one may return home burdened with far
-                more than they need—or can pay for. Better to be the one who walks the fair with a discerning eye and a steady 
-                hand, rather than the one who staggers away with empty pockets and full regrets. After all, it’s not the
-                abundance of fine things that brings satisfaction, but the wisdom to leave behind what you never truly needed.
+                And thus, my friends, this tale stands as a caution to all. For even the sharpest mind can be dulled by
+                the glitter of a fleeting bargain, and in the rush to seize every treasure, one may return home burdened
+                with far more than they need—or can pay for. Better to be the one who walks the fair with a discerning
+                eye and a steady hand, rather than the one who staggers away with empty pockets and full regrets. After
+                all, it’s not the abundance of fine things that brings satisfaction, but the wisdom to leave behind what
+                you never truly needed.
                 <br><br>
-                Hopefully, you can deduce the allegory behind that story. I’m sure the more perceptive folk will pick up on the 
-                deeper meaning. Or perhaps, much like the man in the story, you’ve been swept up in my fine words and now find
-                yourself sitting there wondering, "Wait… what was the point again?" But fear not—unlike the man, at least you 
-                didn’t spend anything and it was only time you wasted!
+                Hopefully, you can deduce the allegory behind that story. I’m sure the more perceptive folk will pick up
+                on the deeper meaning. Or perhaps, much like the man in the story, you’ve been swept up in my fine words
+                and now find yourself sitting there wondering, "Wait… what was the point again?" But fear not—unlike the
+                man, at least you didn’t spend anything and it was only time you wasted!
+
             </p>
         </div>
-        
+
         <div class="blog-post">
             <h2>Monday 7th October</h2>
             <p>
-                Waking up at five in the morning does not do anything to improve my productivity for the day. If anything, 
-                it stymies motivation. I struggle to sleep because of a number of factors. One: my mind is too active with
-                developing mobile apps. I’m thinking of all the opportunities which become available once I complete this
-                module. Two: my duvet is two thick for these warm autumn evenings. Opening my window is not an option to 
-                counteract this because the incessant sirens are insufferable. Three: my mattress is springy - and not in
-                a good way. Four: There are too many things happening at the moment for me to get an early night anyway. 
+                Waking up at five in the morning does not do anything to improve my productivity for the day. If
+                anything, it stymies motivation. I struggle to sleep because of a number of factors. One: my mind is too
+                active with developing mobile apps. I’m thinking of all the opportunities which become available once I
+                complete this module. Two: my duvet is two thick for these warm autumn evenings. Opening my window is
+                not an option to counteract this because the incessant sirens are insufferable. Three: my mattress is
+                springy - and not in a good way. Four: There are too many things happening at the moment for me to get
+                an early night anyway.
                 <br><br>
                 So what do I do if I can’t comfortably get back to sleep? Well, I start reading, which is futile because
-                I haven’t had enough REM sleep which means the part of the brain which consolidates memory is not working
-                efficiently. Thus when I awake a few hours later, I will have forgotten the pages I’ve covered. Option two 
-                is to persist in trying to sleep which is rarely successful. Lastly, I will start coding. This normally
-                means I’ve given up on sleep and am ready to start the day… at five in the morning. Call it productive or
-                an auspicious start to the day. It takes its toll on me when it comes to the evening activities when I am
-                struggling to keep my eyes open. I have sacrificed running with the group tonight and cancelled my place
-                in Pilates - all because I am sleep deprived. I need to do something to fix this.
+                I haven’t had enough REM sleep which means the part of the brain which consolidates memory is not
+                working efficiently. Thus when I awake a few hours later, I will have forgotten the pages I’ve covered.
+                Option two is to persist in trying to sleep which is rarely successful. Lastly, I will start coding.
+                This normally means I’ve given up on sleep and am ready to start the day… at five in the morning. Call
+                it productive or an auspicious start to the day. It takes its toll on me when it comes to the evening
+                activities when I am struggling to keep my eyes open. I have sacrificed running with the group tonight
+                and cancelled my place in Pilates. All because I am sleep deprived. I need to do something to fix this.
+
             </p>
         </div>
 
         <div class="blog-post">
             <h2>Sunday 6th October</h2>
             <p>
-                Bollocks. I’ve made the Futsal team. After my poor performance during the trials on Friday night, I thought 
-                it would be a long shot to assume that I’ll be selected. Obviously, the coach had a few laudatory voices 
-                chirping in his ear convincing him that I’m worth the gamble. As previously mentioned, I have a busy schedule 
-                with all the other activities and societies I want to be involved in. Ideally, futsal would just be a social 
-                event where I could pick and choose the sessions which I wanted to attend. This news certainly has complicated 
-                a few things. There is no rush to decide as I don’t need to pay the sign-up fee for a few weeks, therefore my
-                plan is to stick to my timetable prioritising Hackers and Demon Media and see how many free evenings I can
-                spare after those commitments. Futsal doesn’t embellish my CV which is why it’s third in my pecking order. 
-                Irrespective of my dilemma, I am honoured to be selected; knowing that my skill is being recognised. 
+                Bollocks. I’ve made the Futsal team. After my poor performance during the trials on Friday night, I
+                thought it would be a long shot to assume that I’ll be selected. Obviously, the coach had a few
+                laudatory voices chirping in his ear convincing him that I’m worth the gamble. As previously mentioned,
+                I have a busy schedule with all the other activities and societies I want to be involved in. Ideally,
+                futsal would just be a social event where I could pick and choose the sessions which I wanted to attend.
+                This news certainly has complicated a few things. There is no rush to decide as I don’t need to pay the
+                sign-up fee for a few weeks, therefore my plan is to stick to my timetable prioritising Hackers and
+                Demon Media and see how many free evenings I can spare after those commitments. Futsal doesn’t embellish
+                my CV which is why it’s third in my pecking order. Irrespective of my dilemma, I am honoured to be
+                selected; knowing that my skill is being recognised.
             </p>
         </div>
-        
+
         <div class="blog-post">
             <h2>Friday 4th October</h2>
             <p>
@@ -391,8 +507,8 @@
                 YouTube, etc. When the audience shouts a heckle relating to his tax affairs, he has the same
                 choreographed routine to defend himself. Also, rehearsed clapbacks when asked about Trump, Biden,
                 Starmer, Epstein... I heard him do one joke which I first heard him perform on an episode of <em>Eight
-                    Out
-                    of Ten Cats</em> in 2019. Nevertheless, it was a great evening, and I would recommend everyone go to
+                Out
+                of Ten Cats</em> in 2019. Nevertheless, it was a great evening, and I would recommend everyone go to
                 watch
                 him at least once.
             </p>
@@ -437,7 +553,6 @@
                 I have been preparing for since March: the pool tournament.
             </p>
         </div>
-
 
         <div class="blog-post" id="sept">
             <h2>Monday, 30th September</h2>
@@ -527,11 +642,9 @@
                 film. Facilely, the story follows the life of a student (Jenna Ortega) who takes inspiration from her
                 English Professor's book and uses it in her college thesis. The issue is that the Professor’s book
                 contains an erotic scene and the student focuses entirely on that scene - writing fictitiously what
-                could happen between the student and the professor. It shares simililaries with <em>Lolita</em> but 
-                modernised it. In that the student is 14 so wouldn't fly in today's delicate world but you can see 
-                where the writer got their inspiration from. Depsite the poor reviews, I actually enjoyed it though 
-                it may be because of the varied lexicon instead of the mundane vernacular which appeals to the mass
-                market. Martin Freeman and Jenna Ortega are personal favourites of mine too.
+                could happen between the student and the professor. I actually enjoyed it though it may be because it is
+                based around writing and the narrative using a varied lexicon instead of the mundane vernacular which
+                appeals to the mass market. Martin Freeman and Jenna Ortega are personal favourites of mine too.
                 <br><br>
                 Moving onto the festivities this evening. I wasn’t told that it was Octavia’s birthday on Monday till
                 very late into the evening. Honestly, when they were bringing out the cake, it should have been a
@@ -755,6 +868,7 @@
                 full apartment.
             </p>
         </div>
+
 
     </main>
 </div>
