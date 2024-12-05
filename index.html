@@ -4,120 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Harry's Daily Blogs</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Lato', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        .main-container {
-            display: flex;
-        }
-
-        .sidebar-container {
-            position: fixed;
-            width: 250px;
-            height: 100vh;
-            padding: 20px;
-            background-color: #1e3a8a;
-            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .sidebar {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .sidebar li {
-            margin-bottom: 15px;
-        }
-
-        .sidebar a {
-            text-decoration: none;
-            color: #f4f4f4;
-            padding: 10px;
-            display: block;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .sidebar a:hover {
-            background-color: #4a67cc;
-        }
-
-        main.container {
-            margin-left: 250px; /* Matches the width of the sidebar */
-            padding: 40px;
-            background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-            width: calc(100% - 250px);
-            min-height: 100vh;
-        }
-
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #1e3a8a;
-        }
-
-        .blog-post {
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 30px;
-            background-color: #ffffff;
-        }
-
-        .blog-post h2 {
-            font-size: 1.8em;
-            margin-bottom: 10px;
-            color: #e67e22;
-        }
-
-        .blog-post p {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: #555;
-            margin: 0;
-        }
-
-        .blog-post p + p {
-            margin-top: 15px;
-        }
-
-        #oct17 {
-            text-decoration: none;
-            color: red;
-        }
-
-        /* Responsive behavior */
-        @media (max-width: 768px) {
-            .sidebar-container {
-                width: 100%;
-                height: auto;
-                position: relative;
-                box-shadow: none;
-            }
-
-            .main-container {
-                flex-direction: column;
-            }
-
-            main.container {
-                margin-left: 0;
-                width: 100%;
-                padding: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -143,6 +30,35 @@
         <h1>Harry's Daily Blogs</h1>
 
         <div class="blog-post" id="dec">
+            <h2>Wednesday, 4th December</h2>
+            <p>
+                The time is upon us! The official first edition of The Demon magazine under the new editor-in-chief is
+                here: Issue 53. I’ve seen the online copy and had some concerns. Unfortunately, seeing the printed
+                version only confirmed them. The margins cut off the start of some paragraphs, and the designers turned
+                some pieces from magazine articles into what look like leaflets. (You’ll see what I mean when I link
+                it.) Thankfully, my pages look respectable, so that’s all I’m focusing on. It’s a bit embarrassing for
+                the current editors, who proofread these articles only to leave egregious mistakes, but that’s their
+                problem—not mine.
+                <br><br>
+                In other news, the first meeting for the Paris trip happened this evening. The fifteen or so people who
+                showed up were very easy to get along with and shared some interesting stories about their motivations
+                for going. Some were equivocal, following the careers team’s lead by citing the terrific opportunities
+                this trip could offer and the industry connections we could make. Others were more straightforward and
+                mentioned their desire to see the Eiffel Tower. My answer was a subtle mix of both.
+                <br><br>
+                Since it was just a meet-and-greet, we played a few games, participated in quizzes about Paris, and did
+                some team-building exercises. We also went over the itinerary, which I think is perfect. We’ll depart
+                from London St Pancras at half past three, arriving in Paris at 7 p.m. On Tuesday, we have an
+                introduction and tasks led by Tanium, the cybersecurity company. Wednesday and Thursday are free days,
+                with only an alumni dinner planned with former De Montfort students now living in Paris. This gives me
+                plenty of time to see the sights: The Louvre, Versailles, the Eiffel Tower, the Arc de Triomphe, Jardin
+                des Tuileries, and even enjoy a cruise down the Seine River. If I have time, I’d love to catch a
+                production of <em>Les Misérables</em>. Even if it’s in its native language, it would certainly be an
+                unforgettable experience.
+            </p>
+        </div>
+
+        <div class="blog-post">
             <h2>Tuesday, 3rd December</h2>
             <p>
                 The BBC open call deadline closed at midday today, and I’m relieved to have submitted my pilot
