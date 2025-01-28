@@ -171,3 +171,33 @@ main.container {
         padding: 20px;
     }
 }
+
+.workaway-title {
+    color: #e67e22;
+}
+
+.workaway {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);  /* Darker shadow for a more dramatic effect */
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #333;  /* Dark background */
+    color: #fff;  /* Light text color */
+}
+
+.workaway h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #f39c12;  /* Warm gold color for headings */
+}
+
+.workaway p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #ddd;  /* Light gray text for readability */
+    margin: 0;
+}
+
+.workaway p + p {
+    margin-top: 15px;
+}
