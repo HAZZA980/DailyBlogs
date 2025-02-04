@@ -173,7 +173,7 @@ main.container {
 }
 
 .workaway-title {
-    color: #e67e22;
+    color: purple;
 }
 
 .workaway {
@@ -182,6 +182,11 @@ main.container {
     padding: 20px;
     margin-bottom: 30px;
     background-color: #333;  /* Dark background */
+    color: #fff;  /* Light text color */
+}
+
+.spain {
+    background-color: firebrick;  /* Dark background */
     color: #fff;  /* Light text color */
 }
 
@@ -200,4 +205,36 @@ main.container {
 
 .workaway p + p {
     margin-top: 15px;
+}
+
+/* Set initial size for both image and video */
+.media {
+    width: auto;
+    height: 360px;
+    cursor: pointer;
+    transition: all 0.3s ease;  /* Smooth transition */
+}
+
+/* Full screen style when clicked */
+.expanded {
+    width: 75vw;
+    height: 75vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;  /* Make sure it appears above other content */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+}
+
+/* Add styles for the overlay background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999; /* Make sure overlay is below the media */
 }
